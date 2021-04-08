@@ -1,0 +1,286 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        position: absolute;
+        width: 100%;
+        font-family: 'Libre Baskerville', serif;
+        min-height: 100vh;
+    }
+
+   img{
+       max-width: 100%;
+   }
+
+    header{
+        background-color: #0099ff;
+        margin: 40px 100px 10px 100px;
+        color: white;
+        font-size: 20px;
+        max-height: 73px;
+        position: fixed;
+        width: 87%;
+       
+    }
+
+    .container-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px !important;
+    }
+
+
+    .menu ul li{
+        display: inline-block;
+        padding: 25px;
+        cursor: pointer; 
+    }
+
+    .menu ul li:hover{
+        background-color: #0082d9;
+        color:#ccc;
+    }
+
+    .social-medias ul li{
+        display: inline-block;
+        cursor: pointer;
+        transition: 400ms ease all;
+        padding: 25px;
+    }
+
+    .social-medias ul li:hover{
+        background-color: #0082d9;
+    }
+
+    ul, ol {
+        margin: 0 !important;
+        padding: 0 0 0 0 !important;
+    }
+
+    .main{
+        margin: 0px auto;
+        max-width: 1200px;
+        margin-top: 140px;
+        margin-bottom: 40px;
+	
+    }
+
+    .main h1{
+        font-size: 45px;
+	margin-left:200px;
+    }
+
+    .aboutus{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-top: 20px;
+    }
+
+    .aboutus p{
+        text-align: justify;
+    }
+
+    .img-presentation
+    {
+        text-align: center;
+    }
+
+    .aboutus img{
+        margin-top: -100px;
+        width: 380px;
+    }
+
+    .btn
+    {
+        padding: 10px;
+        background-color: gray;
+        color: white;
+        display: inline-block;
+        border-radius: 8px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .btn-primary
+    {
+        background-color: #3b5998;
+    }
+
+    .btn-red{
+        background-color: #c4302b;
+    }
+
+    .gallery{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 15px;
+        border-bottom: 1px solid #3b5998;
+        margin-bottom: 50px;
+    }
+
+    .gallery img{
+        border: 1px solid #0082d9;
+        padding: 5px;
+        width: 90%;
+        height: 150px;
+    }
+
+    .open-menu{
+        color:white;
+        font-size: 30px;
+        padding: 20px;
+        transition: all 300ms ease;
+        cursor: pointer;
+    }
+
+    .container-header > i{
+        display: none;
+    }
+
+    .open-menu:hover{
+        background-color: #0082d9;
+    }
+
+
+    footer{
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        background-color: #0099ff;
+        min-height: 50px;
+        bottom: 0px;
+        color: white;
+    }
+
+    .container-footer{
+        padding: 10px
+    }
+
+
+    /* RESPONSIVE DESING */
+
+    @media (max-width:1200px)
+    {
+
+        .main h1{
+            text-align: center;
+        }
+
+
+
+        .aboutus{
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 1000px ;
+            margin: 0 auto;
+        }
+
+        .img-presentation{
+            display: none;
+        }
+    }
+
+    @media (max-width:1158px)
+    {
+        .menu{
+            display: none;
+        }
+
+        .container-header > i{
+            display: block;
+        }
+    }
+
+    @media (max-width: 1000px)
+    {
+        .aboutus{
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 700px ;
+            margin: 0 auto;
+        }
+
+        header{
+        margin: 10px 10px 20px 10px;
+        }
+    }
+
+    @media (max-width: 700px)
+    {
+        .aboutus{
+            max-width: 600px ;
+            margin: 0 auto;
+            padding: 10px;
+        }
+    }
+
+
+    .container-main{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        column-gap: 10px;
+	margin-left:200px;
+	width:100%;
+    }
+
+    .actions{
+        background-color: #0099ff;
+        color: white;
+        max-height: 300px;
+        height: 300px;
+    }
+
+    .action{
+        padding: 10px;
+        cursor: pointer;
+        transition: 300ms ease all;
+        margin-bottom: 5px;      
+        animation-name: slide-right;
+        animation-duration: 1.4s;
+    }
+
+    .action:hover{
+        background-color: #0082d9;
+        color: black;
+ 
+    }
+
+    @keyframes slide-right {
+      
+        from {
+          margin-left: 0px;
+        }
+      
+        50% {
+          margin-left: 80px;
+          opacity: 1;
+        }
+      
+        50% {
+          opacity: 0.9;
+        }
+      
+        to {
+          margin-left: 13px;
+        }
+      
+      }
+
+/* 
+      #tableStudents{
+          display: none;
+      } */
+
+      #form-register{
+          display: none;
+      }
+
+      #deleteAction{
+          display: none;
+      }
+
+      #updateAction{
+          display:none;
+      }

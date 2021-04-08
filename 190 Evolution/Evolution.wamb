@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ambiance Version="206">
+  <Preference>
+    <Palette>BlueVolution</Palette>
+    <Palette>GreenVolution</Palette>
+    <Palette>OrangeVolution</Palette>
+    <Palette>PurpuleVolution</Palette>
+    <Palette>RedVolution</Palette>
+  </Preference>
+  <Palette>GrayVolution</Palette>
+</Ambiance>
